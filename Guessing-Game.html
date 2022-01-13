@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- java script 32 no video guessing game -->
+    <script>
+        var totalwin=0;
+        var totalloss=0; 
+
+        for(var x=1;x<=5;x++)
+        {
+            var num= parseInt(prompt("enter your number 1 to 5 ="));
+
+            var rendomnumber=Math.floor(Math.random()*5 +1);
+
+
+            if( num == rendomnumber){
+                document.write("you have won!!!"+"<br>");
+                totalwin++
+            }
+            else{
+                document.write("you have loss.random number was ="+rendomnumber+"<br>");
+                totalloss++
+            }
+
+        }
+
+        document.write("total number of win="+totalwin+"<br>");
+        document.write("total number of loss="+totalloss);
+
+       
+    </script>
+</body>
+</html>

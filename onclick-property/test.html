@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- user jodi button 1 a click kore tahole user ke akta message show korbe peragraph aakare......alert aakar noy  -->
+    <button onclick="first()">click me 1</button>
+    <button onclick="second()">click me 2</button>
+
+    <p id="p">thish is peragraph</p>  <!-- akhane thish is peragraph ai ta na dileo hobe  -->
+
+    <script>
+        var select=document.querySelector("#p");
+
+        function first(){
+            select.innerHTML ="you have click on button 1"                                    
+        }
+
+        function second(){
+            select.innerHTML ="you have click on button 2"                                    
+        }
+    </script>
+</body>
+</html>

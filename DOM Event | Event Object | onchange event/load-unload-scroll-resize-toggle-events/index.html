@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+    <!-- javascript  48 no video     -->
+
+<body style="height: 150vh;">
+
+ <!-- toggle event ar bebohar -->
+    <details>
+        <summary>dip ghosh</summary>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui ipsum nam architecto provident itaque atque aperiam magnam sequi, quod ea reprehenderit dolores incidunt aspernatur? Enim excepturi aspernatur quas delectus quod.</p>
+    </details>
+
+    <!-- ---- -->
+
+    <script>
+        // load event ar bebohar----------------------
+
+        // window.addEventListener("load",function(){ //window hocche golobal object
+        //    console.log("load");
+        // });
+
+        //unload event ar bebohar--------------------- 
+        // window.addEventListener("unload",function(){ //window hocche golobal object
+        //    console.log("unload");
+        // });
+
+        //scroll event ar bebohar-----------------------
+
+        // window.addEventListener("scroll",function(){
+        //     console.log("scroll");   
+        // });
+
+        //resize event ar bebohar--------------------
+
+        // window.addEventListener("resize",function(){
+        //     console.log("resize");
+        // });
+
+
+        //othoba resize ar height weight newar jonno and console a print korar jonno
+        
+        // window.addEventListener("resize",function(){
+        //     const width = window.outerWidth; //window.outerWhidth page ar width ta ke dhorbe
+        //     const height= window.outerHeight; //window.outerHeight page ar height ta dhorbe
+
+        //     console.log(`height: ${height}, width: ${width}`);
+        // });
+
+        //toggle event ar bebohar --------------------
+ 
+        // const details= document.querySelector("details");
+        
+        // details.addEventListener("toggle",function(){
+        //     console.log("toggle")
+        // });
+
+
+        //othoba----------------------
+        const details= document.querySelector("details");
+        
+        details.addEventListener("toggle",function(e){
+            console.log(e.target.open); //akhane jokhon toggle ta open hobe tokhon true return korbe and amra chile ai true false ar opor vitti kore if else ar moddhome kono messege diye dite pari jemon thank you for open
+        });
+    </script>
+</body>
+</html>

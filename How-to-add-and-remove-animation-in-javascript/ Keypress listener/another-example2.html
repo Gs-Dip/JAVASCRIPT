@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <textarea name="" id="" cols="30" rows="10"></textarea>
+    
+    <p>this is peragraph</p>
+
+
+    <script>
+        var count=0;
+        document.querySelector("textarea").addEventListener("keypress",function(event){ //function(event) ar moddhe event dite hobe karon amra kon key te press koreche ta find korte sahajjo korbe  
+            count++  // akhane jotobar key press kora hobe totobar 1 kore increment hobe           
+            var text =event.key; // event.key ar maddhome amra je key te press korbo shei key ta pabo ai line ta akhane na dileo hoto
+            document.querySelector("p").innerHTML = "you have pressed="+count
+        });
+    </script>
+</body>
+</html>

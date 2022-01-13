@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <p>this is peragraph</p>
+
+
+    <script>
+        document.addEventListener("keypress",function(event){ //function(event) ar moddhe event dite hobe karon amra kon key te press koreche ta find korte sahajjo korbe  
+            
+            var text =event.key; // event.key ar maddhome amra je key te press korbo shei key ta pabo
+            document.querySelector("p").innerHTML = "you have pressed="+text
+        });
+    </script>
+</body>
+</html>
